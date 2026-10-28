@@ -1,6 +1,8 @@
 ---
 title: Music Remote
 description: Control the Music app on another Mac from your menu bar.
+# The Homebrew cask, shown next to the download button on goudsmit.tech.
+cask: goudsmit-tech/tap/gt-music-remote
 ---
 
 Music Remote puts the Music app of another Mac in your menu bar: a Mac mini on the stereo, played
