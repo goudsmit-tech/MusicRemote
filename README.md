@@ -10,7 +10,7 @@ it on the local network by itself.
 
 ## Install
 
-- **Homebrew**: `brew install --cask goudsmit-tech/tap/music-remote`
+- **Homebrew**: `brew install --cask goudsmit-tech/tap/gt-music-remote`
 - **Download**: the latest `MusicRemote-<version>.dmg` from [Releases](https://github.com/goudsmit-tech/MusicRemote/releases/latest);
   open it and drag the app to Applications.
 
