@@ -24,7 +24,7 @@ the app finds it on your network by itself: no pairing codes.
 
 ## Install
 
-- **Homebrew**: `brew install --cask goudsmit-tech/tap/music-remote`
+- **Homebrew**: `brew install --cask goudsmit-tech/tap/gt-music-remote`
 - **Download** the DMG, open it and drag Music Remote to Applications.
 
 Requires macOS 15 Sequoia or later.
