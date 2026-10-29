@@ -31,6 +31,11 @@ the app finds it on your network by itself: no pairing codes.
 
 Requires macOS 15 Sequoia or later.
 
+## Privacy
+
+Music Remote collects no data: it talks to your own Macs on your home network. The one exception is
+looking up missing album artwork at Apple. [Privacy policy](/musicremote/privacy/)
+
 ## Feedback
 
 Found a bug or missing something? [Open an issue on GitHub](https://github.com/goudsmit-tech/MusicRemote/issues).
