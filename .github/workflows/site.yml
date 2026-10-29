@@ -1,0 +1,24 @@
+# Tells goudsmit.tech to rebuild when the text of goudsmit.tech/musicremote (site/) changes. That site
+# copies site/ when it builds; new releases make it rebuild from the source repository's release.
+#
+# Secret: SITE_DISPATCH_TOKEN, a fine-grained token with Contents read/write on
+# goudsmit-tech/goudsmit.tech. Without it the workflow does nothing.
+name: site
+
+on:
+  push:
+    branches: [main]
+    paths: [site/**]
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.SITE_DISPATCH_TOKEN }}
+    steps:
+      - name: Ask goudsmit.tech to rebuild
+        if: ${{ env.GH_TOKEN != '' }}
+        run: gh api repos/goudsmit-tech/goudsmit.tech/dispatches -f event_type=app-updated
